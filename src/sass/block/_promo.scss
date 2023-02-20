@@ -1,0 +1,27 @@
+.promo{
+    width: 100%;
+    &__wrapper{
+        position: relative;
+        padding: 158px 0 158px 70px;
+        background: url('../../img/promo/promo_bg.png') center center/ cover no-repeat;
+    }
+    &__title{
+        width: 700px;
+        @extend %size_56;
+    }
+    &__link{
+        display: inline-block;
+        margin-top: 59px;
+        padding: 18px 28px;
+        background: $red-color1;
+        border-radius: 8px;
+        transition: all .2s;
+        @extend %main_size_18;
+        color: #FFFFFF;
+        &:hover{
+            background: #D53152;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.mission{
+    margin-top: 100px;
+    width: 100%;
+    &__wrapper{
+        z-index: 1;
+        background-color: #CB0F41;
+        position: relative;
+    }
+    &__overlay{
+        z-index: 3;
+        padding: 140px 84px 140px 80px;
+        background-color: rgba(163, 12, 51, .5);
+        
+        &::after{
+            content: '';
+            z-index: -1;
+            position: absolute;
+            background-image: url('../img/mission/Left\ pattern.png');
+            top: 45px;
+            left: 0px;
+            width: 300px;
+            height: 375px;
+        }
+        &::before{
+            content: '';
+            z-index: -1;
+            position: absolute;
+            background-image: url('../img/mission/Right\ pattern.png');
+            top: 45px;
+            right: 1px;
+            width: 295px;
+            height: 375px;
+        }
+    }
+    &__title{
+        z-index: 5;
+        @extend %size_56;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__descr{
+        z-index: 5;
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
