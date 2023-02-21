@@ -2,7 +2,6 @@
     position: relative;
     margin-top: 100px;
     width: 100%;
-
     &__menu{
         padding: 28px 70px;
         display: flex;
@@ -10,7 +9,6 @@
         align-items: center;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.06);
     }
-    
     &__list{
         display: flex;
         justify-content: space-between;
@@ -153,17 +151,26 @@
         @extend %main_size_18;
     }
 }
-
-.overlay{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: .05;
-    display: none;
+.menu__sub-sub-list.open{
+    display: block;
 }
+.arrow{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 7px; 
+    width: 0;
+    height: 0;
+    border-top: 5px solid $text-color;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+.arrow.active{
+    transform: rotate(-180deg);
+}
+/* body.touch .arrow{
+    display: block;
+} */
 
 #sub-list{
     display: none;
