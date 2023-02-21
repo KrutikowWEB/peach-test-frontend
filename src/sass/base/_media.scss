@@ -44,6 +44,16 @@
             font-size: 16px;
         }
     }
+    .direction{
+        &__item{
+            &-content{
+                padding: 28px 20px 0 20px;
+            }
+            &-descr{
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width:992px){
@@ -142,6 +152,24 @@
                 top: 12px;
                 right: -14px;
             }
+        }
+    }
+    .direction{
+        &__list{
+            grid-template-rows: repeat(3, minmax(50px, auto));
+        }
+        &__item{
+            height: 65px;
+            &-content{
+                top: 0;
+                padding-top: 20px;
+            }
+            &-title{
+                font-size: 20px;
+            }
+        }
+        &__arrow{
+            display: block;
         }
     }
 }

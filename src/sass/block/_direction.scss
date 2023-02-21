@@ -59,6 +59,22 @@
             color: #FFFFFF;
         }
     }
+    &__arrow{
+        display: none;
+        position: absolute;
+        right: 40px;
+        top: 17px; 
+        width: 15px;
+        height: 15px;
+        border-top: 2px solid  #FFFFFF;
+        border-right: 2px solid  #FFFFFF;
+        transform: rotate(135deg);
+
+    }
+}
+
+.direction__item.open{
+    height: 250px;
 }
 
 .pt16{
