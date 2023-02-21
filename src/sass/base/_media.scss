@@ -129,6 +129,21 @@
     .arrow{
         display: block;
     } 
+    .mission{
+        &__overlay{
+            padding: 70px 70px;
+            &::after{
+                transform: scale(0.9);
+                top: 12px;
+                left: -14px;
+            }
+            &::before{
+                transform: scale(0.9);
+                top: 12px;
+                right: -14px;
+            }
+        }
+    }
 }
 
 @media (max-width:768px){
@@ -241,13 +256,13 @@
             position: static;
         }
         &__sub-list{
-            width: 290px;
+            width: 100%;
             grid-template-columns: 100px 70px 120px;
             column-gap: 0;
             row-gap: 15px;
             top: 63px;
-            left: 15px;
-            padding: 0;
+            left: 0;
+            padding: 0 15px;
             li{
                 position: relative;
             }
@@ -258,6 +273,38 @@
         }
         &__sub-sub-list{
             padding-left: 13px;
+        }
+    }
+    .mission{
+        margin-top: 10px;
+        &__wrapper{
+            overflow: hidden;
+        }
+        &__overlay{
+            padding: 32px 5px;
+            &::after{
+                transform: scale(1.1);
+                background: url('../img/mission/Left pattern_media320.png') no-repeat;
+                top: 27px;
+                left: -48px;
+                width: 140px;
+                height: 154px;
+            }
+            &::before{
+                transform: scale(1.1);
+                background: url('../img/mission/Right pattern_media320.png') no-repeat;
+                top: 27px;
+                right: -48px;
+                width: 143px;
+                height: 154px;
+            }
+        }
+        &__title{
+            font-size: 28px;
+        }
+        &__descr{
+            font-size: 16px;
+            line-height: 130%;
         }
     }
 }
