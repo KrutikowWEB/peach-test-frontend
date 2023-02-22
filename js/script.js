@@ -72,6 +72,7 @@ $(document).ready(function(){
     body.classList.add('mouse');
 }
 
+
 function toggleSlide(item) {
   $(item).each(function(i) {
       $(this).on('click', function(e) {
@@ -83,3 +84,9 @@ function toggleSlide(item) {
 };
 toggleSlide('.arrow2');
 toggleSlide('active');
+
+
+if ($(window).width() <= 992){ 
+  $(".wow").removeClass("wow");
+  }
+new WOW().init();
