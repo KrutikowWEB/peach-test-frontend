@@ -22,7 +22,8 @@ $(document).ready(function(){
     dots: true,
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+
   });
 
   let isMobile = {
@@ -71,21 +72,14 @@ $(document).ready(function(){
     body.classList.add('mouse');
 }
 
-
-$(function(){
-  $(".direction__arrow").click(function(){ 
-      $(".direction__item").toggleClass('open');
-    });
+function toggleSlide(item) {
+  $(item).each(function(i) {
+      $(this).on('click', function(e) {
+          $('.direction__item').eq(i).toggleClass('open');
+          $('.arrow2').eq(i).toggleClass('active');
+          
+      })
   });
-
-
-/* 
-  function toggleSlide(item) {
-    $(item).each(function(i) {
-        $(this).on('click', function(e) {
-            e.preventDefault();
-            $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-            $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-        })
-    });
-}; */
+};
+toggleSlide('.arrow2');
+toggleSlide('active');

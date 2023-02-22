@@ -59,18 +59,24 @@
             color: #FFFFFF;
         }
     }
-    &__arrow{
-        display: none;
-        position: absolute;
-        right: 40px;
-        top: 17px; 
-        width: 15px;
-        height: 15px;
-        border-top: 2px solid  #FFFFFF;
-        border-right: 2px solid  #FFFFFF;
-        transform: rotate(135deg);
+}
 
-    }
+.arrow2{
+    z-index: 5;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 17px; 
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid  #FFFFFF;
+    border-right: 2px solid  #FFFFFF;
+    transform: rotate(135deg);
+}
+.arrow2.active{
+    z-index: 5;
+    transform: rotate(315deg);
+    top: 28px;
 }
 
 .direction__item.open{

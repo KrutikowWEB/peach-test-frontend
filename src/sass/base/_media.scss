@@ -54,6 +54,21 @@
             }
         }
     }
+    .package{
+        &__wrapper{
+            padding: 80px 30px;
+        }
+        &__list{
+            &_sublist{
+                padding: 0 100px;
+            }
+        }
+    }
+    .life{
+        .slick-dots button {
+            width: 154px;
+        }
+    }
 }
 
 @media (max-width:992px){
@@ -162,14 +177,50 @@
             height: 65px;
             &-content{
                 top: 0;
-                padding-top: 20px;
+                padding: 20px 20px 0 10px;
+                &:hover{
+                    display: block;
+                }
             }
             &-title{
                 font-size: 20px;
             }
         }
-        &__arrow{
-            display: block;
+        #development {
+            width: 220px;
+        }
+    }
+    .arrow2{
+        display: block;
+    }
+    .package{
+        &__wrapper{
+            padding: 60px 30px;
+            margin: 0 15px;
+        }
+        &__list{
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 40px;
+            row-gap: 20px;
+            &_sublist{
+                padding: 0 50px;
+                flex-wrap: nowrap;
+            }
+        }
+        &__line{
+            top: 576px;
+        }
+    }
+    .life{
+        &__wrapper{
+            padding: 0 15px 56px;
+        }
+        .slick-dots button {
+            width: 124px;
+        }
+        .slick-prev, .slick-next {
+            visibility: hidden;
         }
     }
 }
@@ -197,11 +248,41 @@
             column-gap: 20px;
         }
     }
+    .direction{
+        &__list{
+            grid-template-columns: 1fr;
+        }
+        &__item{
+            &-content{
+                padding: 20px 20px 0 28px;
+            }
+        }
+        #development {
+            width: 360px;
+        }
+    }
+    .package{
+        &__line{
+            top: 772px;
+        }
+        &__subtitle{
+            margin-top: 100px;
+        }
+    }
+    .life{
+        margin-top: 75px;
+        .slick-dots button {
+            width: 90px;
+        }
+    }
 }
 
 @media (max-width:576px){
     .container{
         max-width: 290px;
+    }
+    .title{
+        font-size: 28px;
     }
     .header{
         &__wrapper{
@@ -227,7 +308,6 @@
         }
         &__title{
             width: 280px;
-            font-size: 28px;
         }
         &__link{
             display: inline-block;
@@ -327,12 +407,66 @@
                 height: 154px;
             }
         }
-        &__title{
-            font-size: 28px;
-        }
         &__descr{
             font-size: 16px;
             line-height: 130%;
+        }
+    }
+    .direction{
+        margin-top: 50px;
+        &__list{
+            margin-top: 15px;
+        }
+        &__item{
+            &-content{
+                padding: 20px 10px;
+            }
+            &-title{
+                width: 220px;
+            }
+        }
+        #development {
+            width: 220px;
+        }
+    }
+    .package{
+        margin-top: 50px;
+        &__wrapper{
+            margin: 0;
+            padding: 24px 5px;
+        }
+        &__item{
+            transform: scale(72.73%);
+            width: 120px;
+        }
+        &__list{
+            margin-top: 40px;
+            gap: 0;
+            &_sublist{padding: 0;
+                margin-top: 25px;
+                flex-wrap: wrap;
+            }
+        } 
+        &__line{
+            top: 575px;
+        }
+        &__subtitle{
+            margin-top: 20px;
+            font-size: 22px;
+        }
+    }
+    .life{
+        &__wrapper{
+            padding: 0 5px 50px;
+        }
+        &__slider{
+            margin-top: 15px;
+        }
+        .slick-dots{
+            display: none;
+        }
+        .slick-dots button {
+            display: none;
         }
     }
 }

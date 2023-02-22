@@ -34,8 +34,6 @@
     }
     &__title{
         z-index: 5;
-        @extend %size_56;
-        text-align: center;
         color: #FFFFFF;
     }
     &__descr{

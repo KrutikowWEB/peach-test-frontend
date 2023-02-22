@@ -6,10 +6,17 @@
         padding-bottom: 56px;
     }
     &__title{
-        @extend %size_56;
+        text-align: start;
     }
     &__slider{
         margin-top: 45px;
+    }
+    &__item{
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
     }
     .slick-prev, .slick-next {
         z-index: 1;
@@ -44,7 +51,7 @@
         border: none;
         width: 214px;
         height: 6px;
-        outline: none; // убираем обводку
+        outline: none;
         font-size: 0;
         transition: all .2s;
     }
